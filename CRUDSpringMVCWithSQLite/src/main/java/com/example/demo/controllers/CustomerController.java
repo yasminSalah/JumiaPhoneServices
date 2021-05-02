@@ -26,7 +26,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService customerService;
 
-	// http://localhost:9090/info
+	// http://localhost:9090/Customer/info
 	@RequestMapping(value = "info", method = RequestMethod.GET)
 	public String index(ModelMap modelMap) {
 		modelMap.put("products", customerService.findAll());
